@@ -57,26 +57,6 @@ class Initial extends AbstractMigration
                     'foreign_key',
                 ]
             )
-            ->addIndex(
-                [
-                    'subject',
-                ]
-            )
-            ->addIndex(
-                [
-                    'read_date',
-                ]
-            )
-            ->addIndex(
-                [
-                    'created',
-                ]
-            )
-            ->addIndex(
-                [
-                    'modified',
-                ]
-            )
             ->create();
     }
 
