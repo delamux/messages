@@ -25,7 +25,7 @@ class MessagesBehavior extends Behavior
 
         $message = $messagesTable->newEntity();
 
-        $message->id = $id;
+        $message->foreign_key = $id;
         $message->subject = $data['subject'];
         $message->body = $data['body'];
 
