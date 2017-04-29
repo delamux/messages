@@ -31,9 +31,7 @@ class MessagesBehavior extends Behavior
     public function addMessage($id, array $data)
     {
         $messagesTable = TableRegistry::get('Messages');
-
         $message = $messagesTable->newEntity();
-
         $message->foreign_key = $id;
         $message->subject = $data['subject'];
         $message->body = $data['body'];
