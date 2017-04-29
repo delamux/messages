@@ -22,9 +22,11 @@ class MessagesBehavior extends Behavior
 
     /**
      * This Function create a message from one model
+     *
      * @param $id
-     * @param array $data
-     * return void
+     * @param $data
+     *
+     * @return void
      */
     public function addMessage($id, array $data)
     {
