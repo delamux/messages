@@ -20,7 +20,14 @@ class MessagesBehavior extends Behavior
 
     ];
 
-    public function addMessage($id, array $data){
+    /**
+     * This Function create a message from one model
+     * @param $id
+     * @param array $data
+     * return void
+     */
+    public function addMessage($id, array $data)
+    {
         $messagesTable = TableRegistry::get('Messages');
 
         $message = $messagesTable->newEntity();
@@ -30,6 +37,5 @@ class MessagesBehavior extends Behavior
         $message->body = $data['body'];
 
         $messagesTable->save($message);
-
     }
 }
